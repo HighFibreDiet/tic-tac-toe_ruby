@@ -18,7 +18,6 @@ class Game
   end
 
   def win?
-    puts @board.spaces[0].marked_by
     result = false
     [0,3,6].each do |index|
       if @board.spaces[index].marked_by == @board.spaces[index + 1].marked_by && @board.spaces[index+1].marked_by == @board.spaces[index + 2].marked_by
